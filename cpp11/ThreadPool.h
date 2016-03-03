@@ -27,7 +27,6 @@ class ThreadPool {
   void Start(int numThreads);
   void StopThreadGroup();
   void TakeAll();
-  void TakeOne();
 
  private:
   std::list<std::shared_ptr<std::thread>> m_threadGroup;  // 线程池
